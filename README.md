@@ -1,6 +1,6 @@
 # Geometrically_necessary_dislocation_EBSD
 
-MATLAB code to calculate and plot density and distribution of GNDs based on MTEX (5.7.0)
+MATLAB code to calculate and plot density and distribution of GNDs (only HCP metals) based on MTEX (5.7.0)
 
 
 Running the code
