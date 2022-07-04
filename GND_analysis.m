@@ -6,13 +6,16 @@ clear all; close all; clc
 
 %% Define parameters
 
+% Phase to be analyzed
+Phase_chosen = 'Magnesium';
+
 % Degree threshold of grain boundary
 GrainAngle = 10;
 
 % Number of threads for calculation
 nthreads = 8;
 
-% Poisson's ratio of material
+% Poisson's ratio
 poisson = 0.35;
 
 % Threshold to plot GND type distribution map
@@ -40,7 +43,7 @@ mP.micronBar.visible = 'off';
 print(gcf,[fname(1:end-4) '_RawMap_NoScaleBar'],'-dpng','-r400');
 
 % plot ipf key
-ipfKey = ipfColorKey(ebsd('Magnesium'));
+ipfKey = ipfColorKey(ebsd(Phase_chosen));
 figure;
 plot(ipfKey)
 print(gcf,[fname(1:end-4) '_ipfKey'],'-dpng','-r400');
@@ -56,7 +59,7 @@ print(gcf,[fname(1:end-4) '_ipfKey'],'-dpng','-r400');
 % print(gcf,[fname(1:end-4) '_Raw Chosen Region'],'-dpng','-r400');
 % saveas(gcf,[fname(1:end-4) '_Raw Chosen Region'],'fig');
 
-%% Denoise and reconstruct grains (not mandatory)
+%% Denoise and reconstruct grains (optional)
 % Here fill, no grains, indexed pixels (all will be filled) are choosen for reconstruction
 
 % reconstruct the grains
