@@ -21,4 +21,6 @@ Further Reference
 
 2. Based on functions shared by Travis Skippon which are available from: https://github.com/tskippon/GND
 
-3. Calculate GND density based on the algorithm of the paper: https://www.sciencedirect.com/science/article/pii/S1359646208000912
+3. Calculate GND density based on the algorithm of the paper:
+Pantleon, W. Resolving the geometrically necessary dislocation content by conventional electron backscattering diffraction. Scripta Materialia 58, 994–997 (2008).
+
